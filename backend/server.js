@@ -14,6 +14,10 @@ const dashboardRoutes = require("./routes/dashboardRoutes");
 const saleRoutes = require("./routes/saleRoutes");
 const app = express();
 
+
+app.use(cors({
+  origin: "*"
+}));
 connectDB();
 
 // Cleanup once on startup: remove deals without an image
