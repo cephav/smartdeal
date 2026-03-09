@@ -1,4 +1,4 @@
-const Product = require("C:/smartdeal/backend/models/Products.js");
+const Product = require("../models/Products");
 
 exports.createProduct = async (req, res) => {
   try {
